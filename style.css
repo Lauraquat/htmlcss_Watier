@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position:relative;
+}
+
+#main-section img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.save{
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.save-p{
+    font-size: 70px;
+    color:white;
+}
+
+p{
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+header img {
+    height: inherit;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top : 20px;
+}
+
+.about{
+    background-color: #FF5A00;
+    color: white;
+    border: 1px solid #FF5A00;
+    padding: 15px 45px 15px 45px;
+    font-weight : bold;
+    font-size: 15px;
+}
+
+.about:hover{
+background-color: transparent;
+    color: #FF5A00;
+    border: 1px solid #FF5A00;
+}
+
+.donate{
+    background-color: white;
+    color: #000000;
+    border: 1px solid white;
+    padding: 15px 35px 15px 35px;
+    font-weight : bold;
+    font-size: 15px;
+}
+
+.donate:hover{
+background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+
+header{
+background-color: #111;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.5rem 2rem;
+position: relative;
+gap: 3rem;
+color: white;
+}
+#logo{
+display: flex;
+}
+
+#menu{
+  display: none;
+  width: 100%;
+  margin: 0;
+  z-index: 10;
+}
+
+#menu ul{
+  list-style: none;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+#menu.show-menu{
+  transform:translateY(51px);
+}
+
+#menu-button{
+  font-size:50px;
+  cursor:pointer;
+}
+
+#menu-button2{
+  font-size:50px;
+  cursor:pointer;
+  display: none;
+}
+
+#menu-button2::after{
+  content:'×';
+}
+#menu-button.close::after{
+  content:'≡';
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+#menu li a:hover {
+    text-decoration: none;
+    background-color: #FF5A00;
+}
+
+.blue{
+    color :#00DBFB;
+}
+
+.orange{
+    color: #FF5A00
+}
+
+.point{
+    display: inline-block;
+    border-radius: 50px;
+    height: 10px;
+    width: 10px;
+    background-color: #FF5A00;
+}
+
+.birds{
+    padding-top: 100px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.birds p{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.text{
+    width: 70%;
+    padding-left: 200px;
+}
+
+.animals{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.border{
+    border: solid 1px grey;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.bold{
+    font-weight: bold;
+}
